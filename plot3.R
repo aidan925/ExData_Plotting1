@@ -1,0 +1,6 @@
+png(filename = "plot3.png", width = 480, height = 480, units = "px")
+plot(DateTime, Power$Sub_metering_1, type = "l", ylab = "Energy sub metering", xlab = "")
+lines(DateTime, Power$Sub_metering_2, col = "red")
+lines(DateTime, Power$Sub_metering_3, col = "blue")
+legend("topright", legend = c("Sub Metering 1", "Sub Metering 2", "Sub Metering 3"), lty = 1, lwd = 2.5, col = c("black", "red", "blue"))
+dev.off()
